@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  @apply text-primary font-bold text-3xl tracking-tighter
+}
+
+.form__input {
+  @apply py-4 px-2 bg-transparent border-2 border-color-form text-color-text-form text-xl font-medium rounded-lg focus:outline-none focus:border-primary
+}
+
+.form__button {
+  @apply border-[3px] py-4 md:w-44 rounded-lg uppercase cursor-pointer
+}
+
+.navbar__button {
+  @apply w-[180px] border-2 font-bold text-lg flex items-center justify-center py-6 rounded-xl
+}
+
+.banner {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+}
+
